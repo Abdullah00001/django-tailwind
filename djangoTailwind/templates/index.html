@@ -1,0 +1,34 @@
+{% load static %} {% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% tailwind_css %}
+  </head>
+  <body>
+    <section class="container mx-auto">
+      <div class="flex items-center">
+        <div>
+          <h3 class="text-2xl text-blue-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+          </h3>
+          <h1 class="text-5xl">
+            Lorem ipsum dolor
+            <span class="text-orange-300">sit amet consectetur,</span>
+            adipisicing elit. Inventore, <br />cum repellendus non quis ipsam
+            atque repudiandae!
+          </h1>
+        </div>
+        <div>
+          <img
+            src="{% static 'images/undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_completion_progress_1oxr_gag2_-1-_0h44_-1-_vov5_-1-_wbt2_-1-_fu4s_-1-_tkgx_-3-_iyv7.svg' %}"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
